@@ -96,17 +96,6 @@ export function Navbar() {
             <NavItem>Sobre</NavItem>
             <NavItem>Suporte</NavItem>
           </ul>
-          <div className="mt-4 flex gap-2">
-            <IconButton variant="text" color="gray" size="sm">
-              <i className="fa-brands fa-twitter text-base" />
-            </IconButton>
-            <IconButton variant="text" color="gray" size="sm">
-              <i className="fa-brands fa-facebook text-base" />
-            </IconButton>
-            <IconButton variant="text" color="gray" size="sm">
-              <i className="fa-brands fa-instagram text-base" />
-            </IconButton>
-          </div>
         </div>
       </Collapse>
     </MTNavbar>

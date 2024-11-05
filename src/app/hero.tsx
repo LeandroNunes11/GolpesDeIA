@@ -11,7 +11,7 @@ function Hero() {
 						<Typography
 							variant="h1"
 							color="white"
-							className="md:max-w-full lg:max-w-3xl"
+							className="md:max-w-full lg:max-w-3xl mt-12"
 						>
 							Golpes de IA: Proteja-se da Nova Era de Fraudes Digitais
 						</Typography>

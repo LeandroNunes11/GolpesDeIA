@@ -29,9 +29,7 @@ export function Footer() {
 						</Typography>
 						<div className="flex mb-3 flex-col lg:flex-grow items-start gap-4">
 							<form
-								action="https://formsubmit.co/sacblogseguranca@gmail.com"
-								method="POST"
-							>
+								action="https://formsubmit.co/sacblogseguranca@gmail.com" method="POST">
 								<div className="w-full	">
 									<Typography
 										variant="small"
@@ -39,14 +37,14 @@ export function Footer() {
 									>
 										Digite seu nome:
 									</Typography>
-									<Input type="text" name="name" label="Nome" color="gray" />
+									<Input type="text" name="name" label="Nome" color="gray" required/>
 									<Typography
 										variant="small"
 										className="font-medium mb-2 text-left"
 									>
 										Digite seu Email:
 									</Typography>
-									<Input type="email" name="email" label="Email" color="gray" />
+									<Input type="email" name="email" label="Email" color="gray" required/>
 									<Typography
 										variant="small"
 										className="font-medium mb-2 text-left"
@@ -59,6 +57,7 @@ export function Footer() {
 										name="message"
 										label="Mensagem"
 										color="gray"
+										required
 									></Textarea>
 								</div>
 								<Button

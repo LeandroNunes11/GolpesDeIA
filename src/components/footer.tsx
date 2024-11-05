@@ -1,13 +1,23 @@
 import { Button, Input, Textarea, Typography } from "@material-tailwind/react";
+import Link from "next/link";
 
 const LINKS = [
 	{
 		title: "Página",
-		items: ["Home", "Sobre IA", "Golpes", "Conte-nos"],
+		items: [
+			{ name: "Home", href: "#home" },
+			{ name: "Sobre IA", href: "#sobre-ia" },
+			{ name: "Golpes", href: "#golpes" },
+			{ name: "Conte-nos", href: "#conte-nos" },
+		],
 	},
 	{
 		title: "Contatos",
-		items: ["Suporte", "Desenvolvedor", "Time"],
+		items: [
+			{ name: "Suporte", href: "#suporte" },
+			{ name: "Desenvolvedor", href: "#desenvolvedor" },
+			{ name: "Time", href: "#time" },
+		],
 	},
 ];
 
@@ -80,7 +90,7 @@ export function Footer() {
 									className="w-full lg:w-fit"
 									size="md"
 								>
-									enviar
+									Enviar
 								</Button>
 								<input type="hidden" name="_template" value={"table"} />
 							</form>
@@ -88,54 +98,56 @@ export function Footer() {
 					</div>
 				</div>
 			</div>
-			<div className="bg-gray-900 mt-28 w-full">
-				<div className="max-w-6xl mx-auto py-10 px-4">
-					<div className="flex justify-center gap-10 mb-10 lg:mb-0 md:gap-32">
-						{LINKS.map(({ title, items }) => (
-							<ul key={title}>
-								<Typography variant="h6" color="light-blue" className="mb-4">
-									{title}
-								</Typography>
-								{items.map((link) => (
-									<li key={link}>
-										<Typography
-											as="a"
-											href="#"
-											className="py-1 font-normal !text-gray-500 transition-colors hover:!text-gray-200"
-										>
-											{link}
-										</Typography>
-									</li>
-								))}
-							</ul>
-						))}
+				<div className="bg-gray-900 mt-28 w-full">
+					<div className="max-w-6xl mx-auto py-10 px-4">
+						<div className="flex justify-center gap-10 mb-10 lg:mb-0 md:gap-32">
+							{LINKS.map(({ title, items }) => (
+								<ul key={title}>
+									<Typography variant="h6" color="light-blue" className="mb-4">
+										{title}
+									</Typography>
+									{items.map((item) => (
+										<li key={item.name}>
+											<Link href={item.href} passHref legacyBehavior>
+												<Typography
+													as="a"
+													className="py-1 font-normal !text-gray-500 transition-colors hover:!text-gray-200"
+												>
+													{item.name}
+												</Typography>
+											</Link>
+										</li>
+									))}
+								</ul>
+							))}
+						</div>
 					</div>
 				</div>
-			</div>
-			<div className="container max-w-6xl mx-auto px-7">
-				<Typography
-					color="blue-gray"
-					className="md:text-center pt-4 font-normal !text-gray-700"
-				>
-					&copy; {CURRENT_YEAR} Made with{" "}
-					<a
-						href="https://www.material-tailwind.com"
-						target="_blank"
-						rel="noreferrer"
+
+				<div className="container max-w-6xl mx-auto px-7">
+					<Typography
+						color="blue-gray"
+						className="md:text-center pt-4 font-normal !text-gray-700"
 					>
-						Material Tailwind
-					</a>{" "}
-					by{" "}
-					<a
-						href="https://www.creative-tim.com"
-						target="_blank"
-						rel="noreferrer"
-					>
-						Creative Tim
-					</a>
-					.
-				</Typography>
-			</div>
+						&copy; {CURRENT_YEAR} Made with{" "}
+						<a
+							href="https://www.material-tailwind.com"
+							target="_blank"
+							rel="noreferrer"
+						>
+							Material Tailwind
+						</a>{" "}
+						by{" "}
+						<a
+							href="https://www.creative-tim.com"
+							target="_blank"
+							rel="noreferrer"
+						>
+							Creative Tim
+						</a>
+						.
+					</Typography>
+				</div>
 		</footer>
 	);
 }

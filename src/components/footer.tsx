@@ -1,22 +1,24 @@
+"use client";
+
 import { Button, Input, Textarea, Typography } from "@material-tailwind/react";
 import Link from "next/link";
+import { useEffect } from "react";
 
 const LINKS = [
 	{
 		title: "Página",
 		items: [
 			{ name: "Home", href: "#home" },
-			{ name: "Sobre IA", href: "#sobre-ia" },
+			{ name: "Sobre IA", href: "#sobre_ia" },
 			{ name: "Golpes", href: "#golpes" },
-			{ name: "Conte-nos", href: "#conte-nos" },
+			{ name: "Relatos", href: "#relatos" },
 		],
 	},
 	{
 		title: "Contatos",
 		items: [
 			{ name: "Suporte", href: "#suporte" },
-			{ name: "Desenvolvedor", href: "#desenvolvedor" },
-			{ name: "Time", href: "#time" },
+			{ name: "Conte-nos", href: "#conte-nos" },
 		],
 	},
 ];
@@ -24,8 +26,36 @@ const LINKS = [
 const CURRENT_YEAR = new Date().getFullYear();
 
 export function Footer() {
+	useEffect(() => {
+		const smoothScroll = (e: MouseEvent) => {
+			e.preventDefault();
+			const target = e.target as HTMLAnchorElement;
+			const href = target.getAttribute("href");
+			if (href && href.startsWith("#")) {
+				const element = document.querySelector(href);
+				if (element) {
+					element.scrollIntoView({
+						behavior: "smooth",
+						block: "start",
+					});
+				}
+			}
+		};
+
+		const links = document.querySelectorAll('a[href^="#"]');
+		links.forEach((link) => {
+			link.addEventListener("click", smoothScroll);
+		});
+
+		return () => {
+			links.forEach((link) => {
+				link.removeEventListener("click", smoothScroll);
+			});
+		};
+	}, []);
+
 	return (
-		<footer className="pt-16 pb-4">
+		<footer id="conte-nos" className="pt-16 pb-4">
 			<div className="container max-w-6xl flex flex-col mx-auto px-7">
 				<div className="grid grid-cols-2 !w-full ">
 					<div className="">
@@ -98,56 +128,56 @@ export function Footer() {
 					</div>
 				</div>
 			</div>
-				<div className="bg-gray-900 mt-28 w-full">
-					<div className="max-w-6xl mx-auto py-10 px-4">
-						<div className="flex justify-center gap-10 mb-10 lg:mb-0 md:gap-32">
-							{LINKS.map(({ title, items }) => (
-								<ul key={title}>
-									<Typography variant="h6" color="light-blue" className="mb-4">
-										{title}
-									</Typography>
-									{items.map((item) => (
-										<li key={item.name}>
-											<Link href={item.href} passHref legacyBehavior>
-												<Typography
-													as="a"
-													className="py-1 font-normal !text-gray-500 transition-colors hover:!text-gray-200"
-												>
-													{item.name}
-												</Typography>
-											</Link>
-										</li>
-									))}
-								</ul>
-							))}
-						</div>
+			<div id="sobre" className="bg-gray-900 mt-28 w-full">
+				<div className="max-w-6xl mx-auto py-10 px-4">
+					<div className="flex justify-center gap-10 mb-10 lg:mb-0 md:gap-32">
+						{LINKS.map(({ title, items }) => (
+							<ul key={title}>
+								<Typography variant="h6" color="light-blue" className="mb-4">
+									{title}
+								</Typography>
+								{items.map((item) => (
+									<li key={item.name}>
+										<Link href={item.href} passHref legacyBehavior>
+											<Typography
+												as="a"
+												className="py-1 font-normal !text-gray-500 transition-colors hover:!text-gray-200"
+											>
+												{item.name}
+											</Typography>
+										</Link>
+									</li>
+								))}
+							</ul>
+						))}
 					</div>
 				</div>
+			</div>
 
-				<div className="container max-w-6xl mx-auto px-7">
-					<Typography
-						color="blue-gray"
-						className="md:text-center pt-4 font-normal !text-gray-700"
+			<div className="container max-w-6xl mx-auto px-7">
+				<Typography
+					color="blue-gray"
+					className="md:text-center pt-4 font-normal !text-gray-700"
+				>
+					&copy; {CURRENT_YEAR} Made with{" "}
+					<a
+						href="https://www.material-tailwind.com"
+						target="_blank"
+						rel="noreferrer"
 					>
-						&copy; {CURRENT_YEAR} Made with{" "}
-						<a
-							href="https://www.material-tailwind.com"
-							target="_blank"
-							rel="noreferrer"
-						>
-							Material Tailwind
-						</a>{" "}
-						by{" "}
-						<a
-							href="https://www.creative-tim.com"
-							target="_blank"
-							rel="noreferrer"
-						>
-							Creative Tim
-						</a>
-						.
-					</Typography>
-				</div>
+						Material Tailwind
+					</a>{" "}
+					by{" "}
+					<a
+						href="https://www.creative-tim.com"
+						target="_blank"
+						rel="noreferrer"
+					>
+						Creative Tim
+					</a>
+					.
+				</Typography>
+			</div>
 		</footer>
 	);
 }

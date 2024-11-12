@@ -27,7 +27,7 @@ const testimonials = [
 
 export function CarouselFeatures() {
 	return (
-		<section className="px-8 pt-40 pb-20">
+		<section id="relatos" className="px-8 pt-36 pb-20">
 			<div className="flex mb-16 flex-col items-center">
 				<Typography variant="h2" className="text-center mb-2" color="blue-gray">
 					What Students Say
@@ -85,8 +85,7 @@ export function CarouselFeatures() {
 									</span>
 								</Typography>
 							</div>
-							<div className="col-span-2 flex w-full shrink-0 md:!justify-end">
-							</div>
+							<div className="col-span-2 flex w-full shrink-0 md:!justify-end"></div>
 						</div>
 					))}
 				</Carousel>

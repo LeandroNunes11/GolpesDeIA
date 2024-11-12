@@ -39,7 +39,7 @@ function Option({ icon: Icon, title, children }: OptionProps) {
 
 export function WhyChooseUs() {
   return (
-    <section className="w-full max-w-4xl mx-auto flex flex-col items-center px-4 py-10">
+    <section id="golpes" className="w-full max-w-4xl mx-auto flex flex-col items-center px-4 py-12">
       <Typography variant="h2" className="text-center mb-2" color="blue-gray">
         Why choose our course?
       </Typography>

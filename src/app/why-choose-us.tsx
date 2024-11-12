@@ -1,106 +1,146 @@
 "use client";
 
-import React from "react";
-import { Typography } from "@material-tailwind/react";
 import {
-  ChartPieIcon,
-  CloudArrowDownIcon,
-  CloudIcon,
-  Cog6ToothIcon,
-  KeyIcon,
-  UsersIcon,
+	ChartPieIcon,
+	CloudIcon,
+	Cog6ToothIcon,
 } from "@heroicons/react/24/solid";
+import { Typography } from "@material-tailwind/react";
+import type React from "react";
 
 import BackgroundCard from "@/components/background-card";
 
 interface OptionProps {
-  icon: React.ElementType;
-  title: string;
-  children: React.ReactNode;
+	icon: React.ElementType;
+	title: string;
+	children: React.ReactNode;
 }
 
 function Option({ icon: Icon, title, children }: OptionProps) {
-  return (
-    <div className="flex gap-4">
-      <div className="mb-4">
-        <Icon className="text-gray-900 h-6 w-6" />
-      </div>
-      <div>
-        <Typography variant="h5" color="blue-gray" className="mb-2">
-          {title}
-        </Typography>
-        <Typography className="mb-2 md:w-10/12 font-normal !text-gray-500">
-          {children}
-        </Typography>
-      </div>
-    </div>
-  );
+	return (
+		<div className="flex gap-4">
+			<div className="mb-4">
+				<Icon className="text-gray-900 h-6 w-6" />
+			</div>
+			<div>
+				<Typography variant="h5" color="blue-gray" className="mb-2">
+					{title}
+				</Typography>
+				<Typography className="mb-2 md:w-10/12 font-normal !text-gray-500">
+					{children}
+				</Typography>
+			</div>
+		</div>
+	);
 }
 
 export function WhyChooseUs() {
-  return (
-    <section id="golpes" className="w-full max-w-4xl mx-auto flex flex-col items-center px-4 py-12">
-      <Typography variant="h2" className="text-center mb-2" color="blue-gray">
-        Why choose our course?
-      </Typography>
-      <Typography
-        variant="lead"
-        className="mb-16 w-full text-center font-normal !text-gray-500 lg:w-10/12"
-      >
-        Discover the unique advantages, benefits, and standout features that set
-        our course apart from the rest.
-      </Typography>
-      <div className="mt-8">
-        <div className="grid grid-cols-1 items-center md:grid-cols-2 gap-12 mb-24">
-          <BackgroundCard title="Expert Instructors">
-            Learn from industry professionals with years of hands-on experience
-            in React development.
-          </BackgroundCard>
-          <div className="space-y-8">
-            <div className="my-4">
-              <Option icon={CloudIcon} title="React Fundamentals">
-                Start with the basics. Understand React&apos;s core concepts,
-                component structure, and the virtual DOM.
-              </Option>
-            </div>
-            <div className="mb-4 flex gap-4">
-              <Option icon={ChartPieIcon} title="State and Props">
-                Learn how to manage component state and utilize props to pass
-                data between components.
-              </Option>
-            </div>
-            <Option icon={Cog6ToothIcon} title="Component Lifecycle">
-              Dive into the lifecycle of React components and harness its power
-              to control your application&apos;s behavior.
-            </Option>
-          </div>
-        </div>
-        <div className="grid grid-cols-1 items-center md:grid-cols-2 gap-12 mb-24">
-          <div className="space-y-8">
-            <div className="my-4">
-              <Option icon={KeyIcon} title="Routing with React Router">
-                Create single-page applications (SPAs) with seamless navigation
-                using React Router.
-              </Option>
-            </div>
-            <div className="mb-4 flex gap-4">
-              <Option icon={UsersIcon} title="Handling Forms">
-                Master form handling in React and manage user input effectively.
-              </Option>
-            </div>
-            <Option icon={CloudArrowDownIcon} title="State Management">
-              Explore state management options, including local component state
-              and global state using Redux or Context API.
-            </Option>
-          </div>
-          <BackgroundCard title="Supportive Community">
-            Connect with fellow learners, share experiences, and get support
-            from instructors and peers.
-          </BackgroundCard>
-        </div>
-      </div>
-    </section>
-  );
+	return (
+		<section
+			id="golpes"
+			className="w-full max-w-4xl mx-auto flex flex-col items-center px-4 py-12"
+		>
+			<Typography variant="h2" className="text-center mb-2" color="blue-gray">
+				Quais os Golpes e os Cuidados?
+			</Typography>
+			<Typography
+				variant="lead"
+				className="mb-16 w-full text-center font-normal !text-gray-500 lg:w-10/12"
+			>
+				Golpes e Precauções: Como Identificar e se Proteger de Ameaças com IA.
+			</Typography>
+			<div className="mt-8">
+				<div className="grid grid-cols-2 items-center md:grid-cols-2 gap-12 mb-24">
+					<div className="space-y-9">
+						<BackgroundCard title="Golpes com I.A.">
+							O golpe com inteligência artificial é uma fraude sofisticada, em
+							que os golpistas utilizam a tecnologia para enganar, manipular ou
+							explorar os indivíduos, ou até mesmo organizações.
+						</BackgroundCard>
+						<div className="my-4">
+							<Option icon={CloudIcon} title="Anúncios Falsos">
+								A IA pode gerar anúncios falsos que imitam produtos e serviços
+								legítimos, direcionando as pessoas para sites fraudulentos.
+							</Option>
+						</div>
+						<div className="flex">
+							<Option icon={ChartPieIcon} title="Notícias Falsas">
+								A IA pode ser usada para gerar notícias falsas de forma rápida e
+								eficiente, espalhando desinformação e manipulando a opinião
+								pública.
+							</Option>
+						</div>
+					</div>
+					<div className="space-y-8">
+						<div className="my-4">
+							<Option icon={CloudIcon} title="Deepfakes">
+								Vídeos e áudios falsos, mas extremamente realistas, criados com
+								IA. Podem ser usados para difamar pessoas, manipular eleições ou
+								até mesmo extorquir dinheiro.
+							</Option>
+						</div>
+						<div className="mb-4 flex gap-4">
+							<Option icon={ChartPieIcon} title="Phishing">
+								E-mails e mensagens falsas que imitam perfeitamente empresas e
+								pessoas conhecidas. A IA permite criar conteúdos ainda mais
+								personalizados e convincentes, aumentando as chances de sucesso
+								do golpe.
+							</Option>
+						</div>
+						<Option icon={Cog6ToothIcon} title="Perfis Falsos">
+							A IA pode gerar perfis falsos em redes sociais com fotos e
+							informações extremamente realistas, dificultando a identificação
+							de perfis falsos.
+						</Option>
+					</div>
+				</div>
+				<div className="grid grid-cols-2 items-center md:grid-cols-2 gap-12 mb-24">
+					<div className="space-y-12">
+						<div className="mb-4 flex gap-4">
+							<Option icon={ChartPieIcon} title="Fale Pessoalmente">
+								Na dúvida se é realmente a pessoa que está interagindo por uma
+								chamada de vídeo ou em um vídeo, tente falar com ele
+								pessoalmente.
+							</Option>
+						</div>
+						<Option icon={Cog6ToothIcon} title="Contate a Empresa">
+							Se você receber uma chamada ou mensagem suspeita pedindo dados ou
+							informações confidenciais, ligue para o número oficial da empresa
+							para verificar a autenticidade.
+						</Option>
+						<div className="my-4">
+							<Option icon={CloudIcon} title="Contate Autoridades">
+								Informe as autoridades policiais por meio de um boletim de
+								ocorrência, que deve conter todos os detalhes do ocorrido. Esse
+								BO pode ser registrado de forma online em alguns estados.
+							</Option>
+						</div>
+					</div>
+					<div className="space-y-8">
+						<BackgroundCard title="Precauções">
+							Informe as autoridades policiais por meio de um boletim de
+							ocorrência, que deve conter todos os detalhes do ocorrido. Esse BO
+							pode ser registrado de forma online em alguns estados.
+						</BackgroundCard>
+						<div className="my-4">
+							<Option icon={CloudIcon} title="Proteja seus Dados">
+								Altere as senhas de todas as contas comprometidas, usando
+								códigos de segurança mais fortes e difíceis de serem
+								adivinhados. Além disso, ative a autenticação multifator em
+								todas as contas e acessos!
+							</Option>
+						</div>
+						<div className="flex">
+							<Option icon={ChartPieIcon} title="Fique Atento">
+								Tenha consciência que esse tipo de golpe existe e desconfie de
+								qualquer tipo de conteúdo em vídeo, áudio ou imagem.
+							</Option>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	);
 }
 
 export default WhyChooseUs;

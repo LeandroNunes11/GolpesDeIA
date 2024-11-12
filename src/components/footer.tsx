@@ -159,23 +159,7 @@ export function Footer() {
 					color="blue-gray"
 					className="md:text-center pt-4 font-normal !text-gray-700"
 				>
-					&copy; {CURRENT_YEAR} Made with{" "}
-					<a
-						href="https://www.material-tailwind.com"
-						target="_blank"
-						rel="noreferrer"
-					>
-						Material Tailwind
-					</a>{" "}
-					by{" "}
-					<a
-						href="https://www.creative-tim.com"
-						target="_blank"
-						rel="noreferrer"
-					>
-						Creative Tim
-					</a>
-					.
+					&copy; {CURRENT_YEAR} Site feito com intuito Informativo e Beneficente.
 				</Typography>
 			</div>
 		</footer>

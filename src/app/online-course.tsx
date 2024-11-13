@@ -5,27 +5,31 @@ import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
 import {
   AcademicCapIcon,
+  BookOpenIcon,
   CheckBadgeIcon,
+  EyeDropperIcon,
+  EyeIcon,
   InboxIcon,
+  LightBulbIcon,
 } from "@heroicons/react/24/solid";
 
 import FeatureCard from "@/components/feature-card";
 
 const FEATURES = [
 	{
-		icon: InboxIcon,
+		icon: BookOpenIcon,
 		title: "Aprendizado",
 		description:
 			"No caso da inteligência artificial o aprendizado é a característica dos algoritmos que têm a capacidade de melhorar seu desempenho por meio da experiência. O aprendizado de máquina, como é chamado (do inglês machine learning), consiste em um algoritmo ajustar seus parâmetros internos com dados oriundos de execuções anteriores, atingindo melhores resultados a cada execução.",
 	},
 	{
-		icon: AcademicCapIcon,
+		icon: EyeIcon,
 		title: "Percepção",
 		description:
 			"No caso dos sistemas cibernéticos, a percepção é baseada em sensores que coletam objetivamente dados acerca do problema em questão. No caso dos sistemas cibernéticos, vai desde a leitura de dados por um software, até sensores físicos, isto é, que interagem com o ambiente, como no caso de acelerômetros.",
 	},
 	{
-		icon: CheckBadgeIcon,
+		icon: LightBulbIcon,
 		title: "Criatividade",
 		description:
 			"A criatividade artificial se apresenta quando um sistema de i.a. — livre dos hábitos e da mecânica a que nós, seres humanos, muitas vezes nos prendemos, e busca maneiras diferentes de resolver a questão. Neste caso não ocorre tanto uma rejeição em si das formas corriqueiras de se pensar, mas não havendo familiaridade com estas formas, o sistema de i.a. explora novas formas com a mesma intensidade.",

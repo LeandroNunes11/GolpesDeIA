@@ -1,9 +1,19 @@
 "use client";
 
 import {
+  BuildingOffice2Icon,
 	ChartPieIcon,
 	CloudIcon,
 	Cog6ToothIcon,
+  EnvelopeIcon,
+  ExclamationCircleIcon,
+  IdentificationIcon,
+  MegaphoneIcon,
+  NewspaperIcon,
+  PhoneIcon,
+  PlayIcon,
+  UserCircleIcon,
+  UserGroupIcon,
 } from "@heroicons/react/24/solid";
 import { Typography } from "@material-tailwind/react";
 import type React from "react";
@@ -58,13 +68,13 @@ export function WhyChooseUs() {
 							explorar os indivíduos, ou até mesmo organizações.
 						</BackgroundCard>
 						<div className="my-4">
-							<Option icon={CloudIcon} title="Anúncios Falsos">
+							<Option icon={MegaphoneIcon} title="Anúncios Falsos">
 								A IA pode gerar anúncios falsos que imitam produtos e serviços
 								legítimos, direcionando as pessoas para sites fraudulentos.
 							</Option>
 						</div>
 						<div className="flex">
-							<Option icon={ChartPieIcon} title="Notícias Falsas">
+							<Option icon={NewspaperIcon} title="Notícias Falsas">
 								A IA pode ser usada para gerar notícias falsas de forma rápida e
 								eficiente, espalhando desinformação e manipulando a opinião
 								pública.
@@ -73,21 +83,21 @@ export function WhyChooseUs() {
 					</div>
 					<div className="space-y-8">
 						<div className="my-4">
-							<Option icon={CloudIcon} title="Deepfakes">
+							<Option icon={PlayIcon} title="Deepfakes">
 								Vídeos e áudios falsos, mas extremamente realistas, criados com
 								IA. Podem ser usados para difamar pessoas, manipular eleições ou
 								até mesmo extorquir dinheiro.
 							</Option>
 						</div>
 						<div className="mb-4 flex gap-4">
-							<Option icon={ChartPieIcon} title="Phishing">
+							<Option icon={EnvelopeIcon} title="Phishing">
 								E-mails e mensagens falsas que imitam perfeitamente empresas e
 								pessoas conhecidas. A IA permite criar conteúdos ainda mais
 								personalizados e convincentes, aumentando as chances de sucesso
 								do golpe.
 							</Option>
 						</div>
-						<Option icon={Cog6ToothIcon} title="Perfis Falsos">
+						<Option icon={UserCircleIcon} title="Perfis Falsos">
 							A IA pode gerar perfis falsos em redes sociais com fotos e
 							informações extremamente realistas, dificultando a identificação
 							de perfis falsos.
@@ -97,19 +107,19 @@ export function WhyChooseUs() {
 				<div className="grid grid-cols-2 items-center md:grid-cols-2 gap-12 mb-24">
 					<div className="space-y-12">
 						<div className="mb-4 flex gap-4">
-							<Option icon={ChartPieIcon} title="Fale Pessoalmente">
+							<Option icon={UserGroupIcon} title="Fale Pessoalmente">
 								Na dúvida se é realmente a pessoa que está interagindo por uma
 								chamada de vídeo ou em um vídeo, tente falar com ele
 								pessoalmente.
 							</Option>
 						</div>
-						<Option icon={Cog6ToothIcon} title="Contate a Empresa">
+						<Option icon={BuildingOffice2Icon} title="Contate a Empresa">
 							Se você receber uma chamada ou mensagem suspeita pedindo dados ou
 							informações confidenciais, ligue para o número oficial da empresa
 							para verificar a autenticidade.
 						</Option>
 						<div className="my-4">
-							<Option icon={CloudIcon} title="Contate Autoridades">
+							<Option icon={PhoneIcon} title="Contate Autoridades">
 								Informe as autoridades policiais por meio de um boletim de
 								ocorrência, que deve conter todos os detalhes do ocorrido. Esse
 								BO pode ser registrado de forma online em alguns estados.
@@ -123,7 +133,7 @@ export function WhyChooseUs() {
 							pode ser registrado de forma online em alguns estados.
 						</BackgroundCard>
 						<div className="my-4">
-							<Option icon={CloudIcon} title="Proteja seus Dados">
+							<Option icon={IdentificationIcon} title="Proteja seus Dados">
 								Altere as senhas de todas as contas comprometidas, usando
 								códigos de segurança mais fortes e difíceis de serem
 								adivinhados. Além disso, ative a autenticação multifator em
@@ -131,7 +141,7 @@ export function WhyChooseUs() {
 							</Option>
 						</div>
 						<div className="flex">
-							<Option icon={ChartPieIcon} title="Fique Atento">
+							<Option icon={ExclamationCircleIcon} title="Fique Atento">
 								Tenha consciência que esse tipo de golpe existe e desconfie de
 								qualquer tipo de conteúdo em vídeo, áudio ou imagem.
 							</Option>

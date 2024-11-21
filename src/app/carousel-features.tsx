@@ -82,7 +82,6 @@ export function CarouselFeatures() {
 									</span>
 								</Typography>
 							</div>
-							<div className="col-span-2 flex w-full shrink-0 md:!justify-end"></div>
 						</div>
 					))}
 				</Carousel>

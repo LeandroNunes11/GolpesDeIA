@@ -30,7 +30,7 @@ function Hero() {
 			id="home"
 			className="relative min-h-screen w-full bg-[url('/image/course.png')] bg-cover bg-no-repeat"
 		>
-			<div className="absolute inset-0 h-full w-full bg-gray-900/60" />
+			<div id="homee" className="absolute inset-0 h-full w-full bg-gray-900/60" />
 			<div className="grid min-h-screen px-8">
 				<div className="container relative z-10 my-auto mx-auto grid place-items-center text-center">
 					<Typography

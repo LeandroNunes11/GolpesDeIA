@@ -1,6 +1,7 @@
 "use client";
 
 import { Button, Input, Textarea, Typography } from "@material-tailwind/react";
+import { Target } from "lucide-react";
 import Link from "next/link";
 import { useEffect } from "react";
 
@@ -17,7 +18,7 @@ const LINKS = [
 	{
 		title: "Contatos",
 		items: [
-			{ name: "Suporte", href: "#suporte" },
+			{ name: "Suporte", href: "mailto:sacblogseguranca@gmail.com" },
 			{ name: "Conte-nos", href: "#conte-nos" },
 		],
 	},
@@ -138,7 +139,17 @@ export function Footer() {
 								</Typography>
 								{items.map((item) => (
 									<li key={item.name}>
-										<Link href={item.href} passHref legacyBehavior>
+										<Link
+											href={item.href}
+											passHref
+											legacyBehavior
+											target={item.target || "_self"}
+											rel={
+												item.target === "_blank"
+													? "noopener noreferrer"
+													: undefined
+											}
+										>
 											<Typography
 												as="a"
 												className="py-1 font-normal !text-gray-500 transition-colors hover:!text-gray-200"
@@ -159,7 +170,7 @@ export function Footer() {
 					color="blue-gray"
 					className="md:text-center pt-4 font-normal !text-gray-700"
 				>
-					&copy; {CURRENT_YEAR} Site feito com intuito Informativo e Beneficente.
+					&copy; {CURRENT_YEAR} Site feito com intuito Informativo.
 				</Typography>
 			</div>
 		</footer>

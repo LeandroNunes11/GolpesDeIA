@@ -44,8 +44,8 @@ export function OnlineCourse() {
 						<Image
 							width={768}
 							height={500}
-							src="/image/online-course.png"
-							className="h-full max-h-[500px] w-full object-cover scale-110"
+							src="/image/IA.png"
+							className="h-full rounded-2xl max-h-[500px] w-full object-cover scale-110"
 							alt="Inteligência Artificial"
 						/>
 					</div>

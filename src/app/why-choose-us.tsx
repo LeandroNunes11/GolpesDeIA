@@ -2,9 +2,6 @@
 
 import {
   BuildingOffice2Icon,
-	ChartPieIcon,
-	CloudIcon,
-	Cog6ToothIcon,
   EnvelopeIcon,
   ExclamationCircleIcon,
   IdentificationIcon,
@@ -60,7 +57,7 @@ export function WhyChooseUs() {
 				Golpes e Precauções: Como Identificar e se Proteger de Ameaças com IA.
 			</Typography>
 			<div className="mt-8">
-				<div className="grid grid-cols-2 items-center md:grid-cols-2 gap-12 mb-24">
+				<div className="grid grid-cols-1 items-center md:grid-cols-2 gap-12 mb-24">
 					<div className="space-y-9">
 						<BackgroundCard title="Golpes com I.A.">
 							O golpe com inteligência artificial é uma fraude sofisticada, em
@@ -104,29 +101,8 @@ export function WhyChooseUs() {
 						</Option>
 					</div>
 				</div>
-				<div className="grid grid-cols-2 items-center md:grid-cols-2 gap-12 mb-24">
-					<div className="space-y-12">
-						<div className="mb-4 flex gap-4">
-							<Option icon={UserGroupIcon} title="Fale Pessoalmente">
-								Na dúvida se é realmente a pessoa que está interagindo por uma
-								chamada de vídeo ou em um vídeo, tente falar com ele
-								pessoalmente.
-							</Option>
-						</div>
-						<Option icon={BuildingOffice2Icon} title="Contate a Empresa">
-							Se você receber uma chamada ou mensagem suspeita pedindo dados ou
-							informações confidenciais, ligue para o número oficial da empresa
-							para verificar a autenticidade.
-						</Option>
-						<div className="my-4">
-							<Option icon={PhoneIcon} title="Contate Autoridades">
-								Informe as autoridades policiais por meio de um boletim de
-								ocorrência, que deve conter todos os detalhes do ocorrido. Esse
-								BO pode ser registrado de forma online em alguns estados.
-							</Option>
-						</div>
-					</div>
-					<div className="space-y-8">
+				<div className="grid grid-cols-1 items-center md:grid-cols-2 gap-12 mb-24">
+					<div className="space-y-8 md:order-last">
 						<BackgroundCard title="Precauções">
 							Informe as autoridades policiais por meio de um boletim de
 							ocorrência, que deve conter todos os detalhes do ocorrido. Esse BO
@@ -144,6 +120,27 @@ export function WhyChooseUs() {
 							<Option icon={ExclamationCircleIcon} title="Fique Atento">
 								Tenha consciência que esse tipo de golpe existe e desconfie de
 								qualquer tipo de conteúdo em vídeo, áudio ou imagem.
+							</Option>
+						</div>
+					</div>
+					<div className="space-y-12 ">
+						<div className="mb-4 flex gap-4">
+							<Option icon={UserGroupIcon} title="Fale Pessoalmente">
+								Na dúvida se é realmente a pessoa que está interagindo por uma
+								chamada de vídeo ou em um vídeo, tente falar com ele
+								pessoalmente.
+							</Option>
+						</div>
+						<Option icon={BuildingOffice2Icon} title="Contate a Empresa">
+							Se você receber uma chamada ou mensagem suspeita pedindo dados ou
+							informações confidenciais, ligue para o número oficial da empresa
+							para verificar a autenticidade.
+						</Option>
+						<div className="my-4">
+							<Option icon={PhoneIcon} title="Contate Autoridades">
+								Informe as autoridades policiais por meio de um boletim de
+								ocorrência, que deve conter todos os detalhes do ocorrido. Esse
+								BO pode ser registrado de forma online em alguns estados.
 							</Option>
 						</div>
 					</div>

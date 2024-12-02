@@ -28,7 +28,7 @@ function Hero() {
 	return (
 		<div
 			id="home"
-			className="relative min-h-screen w-full bg-[url('/image/background.png')] bg-cover bg-center bg-no-repeat"
+			className="relative min-h-screen w-full bg-[url('/image/Background.png')] bg-cover bg-center bg-no-repeat"
 		>
 			<div id="homee" className="absolute inset-0 h-full w-full bg-gray-900/60" />
 			<div className="grid min-h-screen px-8">

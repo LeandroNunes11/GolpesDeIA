@@ -36,7 +36,7 @@ export function CarouselFeatures() {
 					Depoimentos de Vítimas: Histórias Reais para Alertar e Conscientizar!
 				</Typography>
 			</div>
-			<div className="container mx-auto !rounded-lg bg-[url('/image/Background.png')] bg-center py-10 lg:px-16">
+			<div className="container mx-auto !rounded-lg bg-[url('/image/relatos.png')] bg-center py-10 lg:px-16">
 				<Carousel
 					autoplay={true}
 					autoplayDelay={12000}

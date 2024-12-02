@@ -20,11 +20,6 @@ const LINKS = [
 		items: [
 			{ name: "Suporte", href: "mailto:sacblogseguranca@gmail.com" },
 			{ name: "Conte-nos", href: "#conte-nos" },
-			{
-				name: "Desenvolvedor",
-				href: "https://linktr.ee/leandronunes.dev",
-				Target: "_blank"
-			},
 		],
 	},
 ];

@@ -27,7 +27,7 @@ Este projeto tem como objetivo conscientizar as pessoas sobre os golpes digitais
    ```
 4. Execute o projeto:
    ```bash
-   npm start
+   npm start / npm run dev
    ```
 5. Abra o navegador e acesse `http://localhost:3000`.
 

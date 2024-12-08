@@ -104,9 +104,7 @@ export function WhyChooseUs() {
 				<div className="grid grid-cols-1 items-center md:grid-cols-2 gap-12 mb-24">
 					<div className="space-y-8 md:order-last">
 						<BackgroundCard title="Precauções">
-							Informe as autoridades policiais por meio de um boletim de
-							ocorrência, que deve conter todos os detalhes do ocorrido. Esse BO
-							pode ser registrado de forma online em alguns estados.
+							Descubra práticas simples e eficazes para se proteger contra golpes envolvendo inteligência artificial. Esteja preparado e mantenha sua segurança online em primeiro lugar.
 						</BackgroundCard>
 						<div className="my-4">
 							<Option icon={IdentificationIcon} title="Proteja seus Dados">

@@ -10,9 +10,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-	title: "APIEXT",
+	title: "GolpesIA",
 	description:
-		"Introducing Tailwind Course Details Page, a comprehensive and user-friendly course details template designed using Tailwind CSS and Material Tailwind.",
+		"Descubra como se proteger contra golpes envolvendo inteligência artificial. Aqui, você encontrará informações, depoimentos e dicas práticas para garantir sua segurança em um mundo digital cada vez mais avançado.",
 };
 
 export default function RootLayout({

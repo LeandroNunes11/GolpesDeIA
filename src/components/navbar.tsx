@@ -100,7 +100,7 @@ export function Navbar() {
     >
       <div className="container mx-auto flex items-center justify-between">
         <Typography variant="h6" color={isScrolling ? "blue-gray" : "white"}>
-          APIEXT - GOLPES COM IA
+          GOLPES COM IA
         </Typography>
         <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${

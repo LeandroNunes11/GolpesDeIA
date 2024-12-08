@@ -39,11 +39,11 @@ export function CarouselFeatures() {
 			<div className="container mx-auto !rounded-lg bg-[url('/image/relatos.png')] bg-center py-10 lg:px-16">
 				<Carousel
 					autoplay={true}
-					autoplayDelay={12000}
+					autoplayDelay={15000}
 					loop={true}
-					transition={{ duration: 1 }}
-					nextArrow={() => <></>}
-					prevArrow={() => <></>}
+					transition={{ duration: 1.5,
+								type: "tween"
+								}}
 					navigation={({ setActiveIndex, activeIndex, length }) => (
 						<div className="absolute left-16 bottom-0 z-50 flex h-5 w-20 -translate-x-2/4 gap-2 md:left-2/4">
 							{new Array(length).fill("").map((_, i) => (
@@ -61,7 +61,7 @@ export function CarouselFeatures() {
 					{testimonials.map((testimonial, index) => (
 						<div
 							key={index}
-							className="!relative flex grid-cols-1 flex-col-reverse gap-6 px-10 py-14 md:grid md:grid-cols-5 md:gap-14 md:py-20"
+							className="!relative flex grid-cols-1 flex-col-reverse gap-6 px-14 py-14 md:grid md:grid-cols-5 md:gap-14 md:py-20"
 						>
 							<div className="col-span-3 flex flex-col items-start justify-center">
 								<Typography

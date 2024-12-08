@@ -1,7 +1,7 @@
 "use client";
 
 import { Button, Input, Textarea, Typography } from "@material-tailwind/react";
-import { Target } from "lucide-react";
+import { Target } from 'lucide-react';
 import Link from "next/link";
 import { useEffect } from "react";
 
@@ -20,6 +20,7 @@ const LINKS = [
 		items: [
 			{ name: "Suporte", href: "mailto:sacblogseguranca@gmail.com" },
 			{ name: "Conte-nos", href: "#conte-nos" },
+			{ name: "Desenvolvedor", href: "https://linktr.ee/leandronunes.dev", target: "_blank" }
 		],
 	},
 ];
@@ -141,8 +142,6 @@ export function Footer() {
 									<li key={item.name}>
 										<Link
 											href={item.href}
-											passHref
-											legacyBehavior
 											target={item.target || "_self"}
 											rel={
 												item.target === "_blank"
@@ -178,3 +177,4 @@ export function Footer() {
 }
 
 export default Footer;
+

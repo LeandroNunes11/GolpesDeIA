@@ -49,9 +49,13 @@ Contribuições são bem-vindas! Siga as etapas abaixo:
 5. Abra um Pull Request.
 
 ## Licença
-Este projeto está licenciado sob a [MIT License](LICENSE). Você é livre para usá-lo, modificá-lo e distribuí-lo, desde que mantenha os créditos originais.
+- Copyright 2023 [Creative Tim](https://www.creative-tim.com?ref=readme-ntpp)
+- Creative Tim [license](https://www.creative-tim.com/license?ref=readme-ntpp)
 
 ## Contato
 - **Autor:** Leandro Nunes
 - **E-mail:** leandron7090@gmail.com
-- **LinkedIn:** [Leandro Nunes]('www.linkedin.com/in/devleandronunes')
+
+##### Social Media
+
+Twitter: <https://linktr.ee/leandronunes.dev>

@@ -54,4 +54,4 @@ Este projeto está licenciado sob a [MIT License](LICENSE). Você é livre para 
 ## Contato
 - **Autor:** Leandro Nunes
 - **E-mail:** leandron7090@gmail.com
-- **LinkedIn:** [Leandro Nunes](www.linkedin.com/in/devleandronunes)
+- **LinkedIn:** [Leandro Nunes]('www.linkedin.com/in/devleandronunes')

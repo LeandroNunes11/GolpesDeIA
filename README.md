@@ -1,4 +1,5 @@
 # Golpes com IA - Projeto de Extensão
+WebSite: <https://golpesdeia.vercel.app/>
 
 ## Sobre o Projeto
 Este projeto tem como objetivo conscientizar as pessoas sobre os golpes digitais que utilizam inteligência artificial e oferecer informações e ferramentas para se proteger contra essas ameaças. Através de conteúdo informativo, depoimentos e orientações práticas, buscamos criar um ambiente digital mais seguro e educar a população sobre os riscos da tecnologia mal utilizada.
@@ -58,4 +59,4 @@ Contribuições são bem-vindas! Siga as etapas abaixo:
 
 ##### Social Media
 
-Twitter: <https://linktr.ee/leandronunes.dev>
+Linktree: <https://linktr.ee/leandronunes.dev>
